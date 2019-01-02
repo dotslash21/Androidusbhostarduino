@@ -51,8 +51,8 @@ public class MainActivity extends AppCompatActivity implements Runnable, GoogleA
     private static final byte IGNORE_00 = (byte) 0x00;
     private static final byte SYNC_WORD = (byte) 0xFF;
 
-    private static final int CMD_LED_OFF = 2;
     private static final int CMD_LED_ON = 1;
+    private static final int CMD_LED_OFF = 2;
     private static final int CMD_TEXT = 3;
     private static final int MAX_TEXT_LENGTH = 16;
 
@@ -135,7 +135,7 @@ public class MainActivity extends AppCompatActivity implements Runnable, GoogleA
         buttonSendLocation = (Button)findViewById(R.id.send_location);
         buttonGetLocation = (Button)findViewById(R.id.refresh_location);
 
-        // onClickListemer for "SEND TEXT" button.
+        // onClickListener for "SEND TEXT" button.
         buttonSend.setOnClickListener(new OnClickListener(){
 
             @Override
@@ -156,7 +156,7 @@ public class MainActivity extends AppCompatActivity implements Runnable, GoogleA
 
             }});
 
-        // onClickListemer for "SEND LOCATION DATA" button.
+        // onClickListener for "SEND LOCATION DATA" button.
         buttonSendLocation.setOnClickListener(new OnClickListener(){
 
             @Override
